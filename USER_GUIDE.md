@@ -465,6 +465,8 @@ If a retry succeeds, the normal views will repopulate from verified saved state.
 
 Odin may deliberately refuse to show a current market conclusion when the underlying saved snapshot is missing, malformed, stale, or fails validation.
 
+On packaged Windows installs, the Odin installer owns the 15-minute collector and independent watchdog scheduled tasks. If Health Reports says either packaged task is missing or has the wrong action, **Check updates** or reinstall the latest build; the installer repairs both tasks automatically.
+
 Do not treat “unavailable” as a hidden bearish or bullish signal. It means unavailable.
 
 ### Neo will not start

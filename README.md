@@ -8,7 +8,7 @@ This public repository contains **compiled Project Odin demo installers and user
 - **Mac, Apple Silicon:** [Download ODIN-macOS-arm64.dmg](https://github.com/mickeythacker/odin-downloads/releases/latest/download/ODIN-macOS-arm64.dmg)
 - **Mac, Intel:** [Download ODIN-macOS-x86_64.dmg](https://github.com/mickeythacker/odin-downloads/releases/latest/download/ODIN-macOS-x86_64.dmg)
 
-The stable links above always point to the newest published release. You can also open the [latest release page](https://github.com/mickeythacker/odin-downloads/releases/latest) to see versioned installers, checksums/update metadata, and legal notices.
+The stable links above always point to the newest published release. **Project Odin 0.1.9 and later include the searchable in-app Help & User Guide on Windows, Apple Silicon Mac, and Intel Mac.** You can also open the [latest release page](https://github.com/mickeythacker/odin-downloads/releases/latest) to see versioned installers, checksums/update metadata, and legal notices.
 
 Read the full [Project Odin User Guide](USER_GUIDE.md) for navigation, the research workflow, Neo Active Paper and Sandbox, updates, common tasks, safety boundaries, and troubleshooting.
 

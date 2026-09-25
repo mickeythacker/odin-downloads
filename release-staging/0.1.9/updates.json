@@ -1,0 +1,17 @@
+{
+  "version": "0.1.9",
+  "assets": {
+    "windows-x86_64": {
+      "url": "https://github.com/mickeythacker/odin-downloads/releases/download/demo-0.1.9/ODIN-Setup-0.1.9-demo.exe",
+      "sha256": "b54146ac36472578131714bad8c27029973198aa32aaa76dc01fd619a8f929a5"
+    },
+    "macos-arm64": {
+      "url": "https://github.com/mickeythacker/odin-downloads/releases/download/demo-0.1.9/ODIN-0.1.9-macOS-arm64.dmg",
+      "sha256": "ad62714e1e72f289266ff3fa0cefca71afad37ebb1c91ae542bd37a842c41ff2"
+    },
+    "macos-x86_64": {
+      "url": "https://github.com/mickeythacker/odin-downloads/releases/download/demo-0.1.9/ODIN-0.1.9-macOS-x86_64.dmg",
+      "sha256": "85fd0e5bbe1b83bd6ed9323379ae03158cb251cc60aaedab37a0d47caaf026ce"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+name: Publish tagged release
+
+on:
+  push:
+    tags:
+      - "demo-*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Validate staged release
+        shell: bash
+        run: |
+          set -euo pipefail
+          version="${GITHUB_REF_NAME#demo-}"
+          dir="release-staging/${version}"
+          test -f "${dir}/ODIN-Setup-${version}-demo.exe"
+          test -f "${dir}/ODIN-${version}-macOS-arm64.dmg"
+          test -f "${dir}/ODIN-${version}-macOS-x86_64.dmg"
+          test -f "${dir}/updates.json"
+          test -f "${dir}/USER_GUIDE.md"
+      - name: Prepare stable aliases
+        shell: bash
+        run: |
+          set -euo pipefail
+          version="${GITHUB_REF_NAME#demo-}"
+          dir="release-staging/${version}"
+          cp "${dir}/ODIN-Setup-${version}-demo.exe" "${dir}/ODIN-Setup-Windows.exe"
+          cp "${dir}/ODIN-${version}-macOS-arm64.dmg" "${dir}/ODIN-macOS-arm64.dmg"
+          cp "${dir}/ODIN-${version}-macOS-x86_64.dmg" "${dir}/ODIN-macOS-x86_64.dmg"
+      - name: Publish GitHub release
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          version="${GITHUB_REF_NAME#demo-}"
+          dir="release-staging/${version}"
+          gh release create "${GITHUB_REF_NAME}"             "${dir}/ODIN-Setup-${version}-demo.exe"             "${dir}/ODIN-${version}-macOS-arm64.dmg"             "${dir}/ODIN-${version}-macOS-x86_64.dmg"             "${dir}/ODIN-Setup-Windows.exe"             "${dir}/ODIN-macOS-arm64.dmg"             "${dir}/ODIN-macOS-x86_64.dmg"             "${dir}/updates.json"             "${dir}/END_USER_LICENSE.txt"             "${dir}/THIRD_PARTY_NOTICES.md"             "${dir}/PRIVACY.md"             "${dir}/USER_GUIDE.md"             --title "Project Odin ${version}"             --notes-file "${dir}/RELEASE_NOTES.md"

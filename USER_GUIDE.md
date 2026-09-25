@@ -63,11 +63,15 @@ Projects is the activity/change view. It surfaces large interval movements, asse
 
 This screen answers, “What changed enough to deserve attention?” It does not answer, “What should I buy?”
 
-### Knowledge
+### The Well
 
-Knowledge contains the glossary and explanatory material for Odin's market, evidence, and reasoning terms. Use it when a term such as Prediction, Objection, breadth, benchmark, or modeled friction is unclear.
+**Mímisbrunnr**, shown in the dashboard as **The Well**, is Odin's institutional-memory area. It catalogs the canonical evidence, research cycles, Neo experiment history, saved audits, and future empirical datasets that Odin has accumulated.
 
-The glossary also explains what a term **does not** mean. That distinction matters in Odin because a measurement is not automatically a recommendation.
+The depth line at the top reports how much history exists: market snapshots and observed days, Predictions → Outcomes → Lessons, Neo journal history, and empirical Forseti observations. These are depth measurements, not a claim that Odin already understands everything it has stored.
+
+The same screen contains the glossary and explanatory material for Odin's market, evidence, and reasoning terms. Use it when a term such as Prediction, Objection, breadth, benchmark, modeled friction, or Mímisbrunnr is unclear.
+
+The Well deliberately keeps **evidence**, **claims**, **tested results**, and **durable Lessons** distinct. A record being present does not make it proven knowledge.
 
 ### Analytics
 
@@ -447,7 +451,7 @@ Click **Check updates**.
 
 ### “I do not understand a term.”
 
-Open **Knowledge** or use the **?** button on a Workflow stage.
+Open **The Well** or use the **?** button on a Workflow stage.
 
 ## 15. Troubleshooting
 

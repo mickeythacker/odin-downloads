@@ -1,15 +1,16 @@
 # Project Odin downloads
 
-This repository distributes compiled installers and update manifests for
-Project Odin. The application source is developed in a separate private
-repository. No user records, trading sessions, API credentials, or research
-data are published here.
+This public repository contains **compiled Project Odin demo installers only**. The application source is developed in a separate private repository. No source tree, user records, trading sessions, API credentials, or private research data are published here.
 
-Open [Releases](https://github.com/mickeythacker/odin-downloads/releases)
-to download the current Windows setup or the Mac DMG for your processor.
-The app checks updates.json in the latest release on launch and every six
-hours while open. It verifies the downloaded installer's SHA-256 hash and
-asks before launching it. Updates do not place real trades.
+## Download the latest build
+
+- **Windows:** [Download ODIN-Setup-Windows.exe](https://github.com/mickeythacker/odin-downloads/releases/latest/download/ODIN-Setup-Windows.exe)
+- **Mac, Apple Silicon:** [Download ODIN-macOS-arm64.dmg](https://github.com/mickeythacker/odin-downloads/releases/latest/download/ODIN-macOS-arm64.dmg)
+- **Mac, Intel:** [Download ODIN-macOS-x86_64.dmg](https://github.com/mickeythacker/odin-downloads/releases/latest/download/ODIN-macOS-x86_64.dmg)
+
+The stable links above always point to the newest published release. You can also open the [latest release page](https://github.com/mickeythacker/odin-downloads/releases/latest) to see versioned installers, checksums/update metadata, and legal notices.
+
+Odin checks `updates.json` in the latest release on launch and every six hours while open. It verifies downloaded installers against the published SHA-256 hash and asks before launching an update. Updates do not place real trades.
 
 ## License and notices
 
